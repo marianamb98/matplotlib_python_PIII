@@ -53,7 +53,15 @@ if __name__ == '__main__':
     # Darle color a la línea a su elección
 
     # Crear acá su gráfico
+    fig = plt.figure()
+    fig.suptitle('Graficar Y=X**2', fontsize=14)
+    ax = fig.add_subplot()
 
-    line_plot()
+    ax.plot(x, y, c='darkred', marker='*', label='y=x**2)
+    ax.legend()
+    ax.grid()
+    ax.set_facecolor('whitesmoke')
+
+    plot_show()
 
     print("terminamos")
