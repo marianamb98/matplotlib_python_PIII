@@ -91,6 +91,29 @@ if __name__ == '__main__':
     # Colocar una grilla a elección
 
     # Crear acá su gráfico
+    fig = plt.figure(figsize=(10, 8))
+
+    ax1 = fig.add_subplot(2, 2, 1)
+    ax1.plot(x, y1, color='blue')
+    ax1.set_title('y = x^2')
+    ax1.grid(True)
+
+    ax2 = fig.add_subplot(2, 2, 2)
+    ax2.plot(x, y2, color='green')
+    ax2.set_title('y = x^3')
+    ax2.grid(True)
+
+    ax3 = fig.add_subplot(2, 2, 3)
+    ax3.plot(x, y3, color='red')
+    ax3.set_title('y = x^4')
+    ax3.grid(True)
+
+    ax4 = fig.add_subplot(2, 2, 4)
+    ax4.plot(x, y4, color='purple')
+    ax4.set_title('y = √x')
+    ax4.grid(True)
+
+    plt.tight_layout()
 
     grid()
 
