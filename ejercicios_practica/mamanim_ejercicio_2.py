@@ -68,7 +68,14 @@ if __name__ == '__main__':
     # a su elección
 
     # Crear acá su gráfico 
-
+    plt.plot(x, y1, label='y = x^2', marker='o')
+    plt.plot(x, y2, label='y = x^3', marker='s')
+    plt.xlabel('x')
+    
+    plt.ylabel('y')
+    plt.title('Gráfica de y = x^2 y y = x^3')
+    plt.legend()
+    plt.grid(True)
     multi_plot()  
 
     print("terminamos")
