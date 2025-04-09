@@ -57,6 +57,15 @@ if __name__ == '__main__':
     # Elegir un marker a elección
 
     # Crear acá su gráfico
+    plt.figure(figsize=(8, 6))
+    plt.scatter(x, y, color='purple', label='y = tanh(x)', s=30)
+    
+    plt.title('Gráfica Scatter de y = tanh(x)')
+    plt.xlabel('x')
+    plt.ylabel('y')
+    plt.axhline(0, color='black', linewidth=0.5)
+    plt.axvline(0, color='black', linewidth=0.5)plt.grid(True)
+    plt.legend()
 
     scatter_plot()
 
